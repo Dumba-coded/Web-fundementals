@@ -13,6 +13,14 @@ Mouse cursor - Grace
 Logo - Kiwi 
 
 Sub Sections | Consistencies
+Colour Scheme 
+
+    https://colorhunt.co/palette/f8f3d9ebe5c2b9b28a504b38 
+    F8F3D9 - Beige
+    EBE5C2 - Dark Biege
+    B9B28A - Olive
+    504B38 - Deep Olive
+
 - Header / Navigation link 
 - Footer
 - Contacts US 
@@ -43,7 +51,7 @@ NOTES;
         - Masculine 
         - Unisex
     Login/Sign Up - Fatima
-    
+
     Feedback/Reviews/ Complaint Forum - Grace 
 
 
