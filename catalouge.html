@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Perfume Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+
+    <main>
+
+        <section class="search-section">
+            <h2>Find a Perfume</h2>
+
+            <form id="filter-form">
+
+                <div class="search-row">
+                    <label for="search">
+                        Search perfume
+                    </label>
+
+                    <input
+                        type="search"
+                        id="search"
+                        name="search"
+                        placeholder="Search perfume..."
+                    >
+
+                    <button type="submit">
+                        Search
+                    </button>
+                </div>
+
+                <fieldset>
+                    <legend>Filters</legend>
+
+                    <div class="filter-grid">
+
+                        <div>
+                            <label for="sort">
+                                Sort by
+                            </label>
+
+                            <select id="sort" name="sort">
+                                <option value="">
+                                    Select an option
+                                </option>
+
+                                <option value="name-az">
+                                    Name: A to Z
+                                </option>
+
+                                <option value="name-za">
+                                    Name: Z to A
+                                </option>
+
+                                <option value="price-low-high">
+                                    Price: Low to High
+                                </option>
+
+                                <option value="price-high-low">
+                                    Price: High to Low
+                                </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="brand">
+                                Brand
+                            </label>
+
+                            <select id="brand" name="brand">
+                                <option value="">
+                                    All brands
+                                </option>
+
+                                <option value="chanel">
+                                    Chanel
+                                </option>
+
+                                <option value="dior">
+                                    Dior
+                                </option>
+
+                                <option value="gucci">
+                                    Gucci
+                                </option>
+
+                                <option value="versace">
+                                    Versace
+                                </option>
+
+                                <option value="ysl">
+                                    Yves Saint Laurent
+                                </option>
+
+                                <option value="armani">
+                                    Giorgio Armani
+                                </option>
+
+                                <option value="burberry">
+                                    Burberry
+                                </option>
+
+                                <option value="tom-ford">
+                                    Tom Ford
+                                </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <select id="gender" name="gender">
+                                <option value="">
+                                    All
+                                </option>
+
+                                <option value="women">
+                                    Women
+                                </option>
+
+                                <option value="men">
+                                    Men
+                                </option>
+
+                                <option value="unisex">
+                                    Unisex
+                                </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="season">
+                                Season
+                            </label>
+
+                            <select id="season" name="season">
+                                <option value="">
+                                    All seasons
+                                </option>
+
+                                <option value="spring">
+                                    Spring
+                                </option>
+
+                                <option value="summer">
+                                    Summer
+                                </option>
+
+                                <option value="autumn">
+                                    Autumn
+                                </option>
+
+                                <option value="winter">
+                                    Winter
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button type="submit">
+                            Apply Filters
+                        </button>
+
+                        <button type="reset">
+                            Clear Filters
+                        </button>
+                    </div>
+                </fieldset>
+
+            </form>
+
+            <p
+                id="search-message"
+                aria-live="polite"
+            ></p>
+        </section>
+
+        <section id="perfumes">
+
+            <div class="section-heading">
+                <h2>Explore Perfumes</h2>
+
+                <p>
+                    Browse the collection and add your
+                    favourites to the cart.
+                </p>
+            </div>
+
+            <div class="perfume-list">
+
+                <article
+                    class="perfume-card"
+                    data-name="Chanel Coco Mademoiselle"
+                    data-price="120"
+                    data-brand="chanel"
+                    data-gender="women"
+                    data-season="spring"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Chanel Coco Mademoiselle to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Chanel Coco Mademoiselle</h3>
+
+                    <p>Brand: Chanel</p>
+
+                    <p class="price">$120.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Chanel%20Coco%20Mademoiselle"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Dior Sauvage"
+                    data-price="135"
+                    data-brand="dior"
+                    data-gender="men"
+                    data-season="winter"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Dior Sauvage to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Dior Sauvage</h3>
+
+                    <p>Brand: Dior</p>
+
+                    <p class="price">$135.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Dior%20Sauvage"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Gucci Bloom"
+                    data-price="110"
+                    data-brand="gucci"
+                    data-gender="women"
+                    data-season="spring"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Gucci Bloom to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Gucci Bloom</h3>
+
+                    <p>Brand: Gucci</p>
+
+                    <p class="price">$110.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Gucci%20Bloom"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Versace Eros"
+                    data-price="105"
+                    data-brand="versace"
+                    data-gender="men"
+                    data-season="summer"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Versace Eros to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Versace Eros</h3>
+
+                    <p>Brand: Versace</p>
+
+                    <p class="price">$105.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Versace%20Eros"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Yves Saint Laurent Libre"
+                    data-price="128"
+                    data-brand="ysl"
+                    data-gender="women"
+                    data-season="autumn"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Yves Saint Laurent Libre to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Yves Saint Laurent Libre</h3>
+
+                    <p>Brand: Yves Saint Laurent</p>
+
+                    <p class="price">$128.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Yves%20Saint%20Laurent%20Libre"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Acqua di Gio"
+                    data-price="115"
+                    data-brand="armani"
+                    data-gender="men"
+                    data-season="summer"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Acqua di Gio to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Acqua di Gio</h3>
+
+                    <p>Brand: Giorgio Armani</p>
+
+                    <p class="price">$115.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Acqua%20di%20Gio"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Burberry Her"
+                    data-price="118"
+                    data-brand="burberry"
+                    data-gender="women"
+                    data-season="autumn"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Burberry Her to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Burberry Her</h3>
+
+                    <p>Brand: Burberry</p>
+
+                    <p class="price">$118.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Burberry%20Her"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+                <article
+                    class="perfume-card"
+                    data-name="Tom Ford Black Orchid"
+                    data-price="165"
+                    data-brand="tom-ford"
+                    data-gender="unisex"
+                    data-season="winter"
+                >
+                    <div class="image-placeholder">
+                        Perfume Image
+                    </div>
+
+                    <button
+                        type="button"
+                        class="favourite-button"
+                        aria-label="Add Tom Ford Black Orchid to favourites"
+                    >
+                        ☆
+                    </button>
+
+                    <h3>Tom Ford Black Orchid</h3>
+
+                    <p>Brand: Tom Ford</p>
+
+                    <p class="price">$165.00</p>
+
+                    <button
+                        type="button"
+                        class="add-cart-button"
+                    >
+                        Add to My Cart
+                    </button>
+
+                    <a
+                        href="reviews.html?perfume=Tom%20Ford%20Black%20Orchid"
+                        class="review-button"
+                    >
+                        Write a Review
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <h2>My Cart</h2>
+
+            <div id="cart-empty">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <div id="cart-content" hidden>
+                <ul id="cart-items"></ul>
+
+                <div class="cart-summary">
+                    <strong>
+                        Total:
+                        $<span id="cart-total">0.00</span>
+                    </strong>
+
+                    <button
+                        type="button"
+                        id="clear-cart"
+                    >
+                        Clear Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <p>
+            &copy; 2026 Perfume Finder.
+            All rights reserved.
+        </p>
+
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
