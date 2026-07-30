@@ -115,7 +115,7 @@
       text-underline-offset: 7px;
     }
 
-    .active {
+    .nav-links a.active {
     text-decoration: underline;
     text-underline-offset: 7px;
     }
