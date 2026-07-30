@@ -1,0 +1,117 @@
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      color: #111111;
+      padding: 20px;
+    }
+
+    .navbar {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+      border: 2px solid #111111;
+      background-color: #f4f4f4;
+    }
+
+    .navbar-top {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 18px;
+      border-bottom: 2px solid #111111;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #111111;
+      text-decoration: none;
+      min-width: 0;
+    }
+
+    .brand-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-shrink: 0;
+    }
+
+    .nav-icon {
+      color: #111111;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .menu-button {
+      display: none;
+      border: none;
+      background: transparent;
+      color: #111111;
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-links {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      padding: 20px 30px;
+    }
+
+    .nav-links li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-links li:not(:last-child)::after {
+      content: "";
+      width: 2px;
+      height: 20px;
+      margin: 0 35px;
+      background-color: #111111;
+    }
+
+    .nav-links a {
+      color: #111111;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      text-decoration: underline;
+      text-underline-offset: 7px;
+    }
+
+  </style>
