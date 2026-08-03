@@ -410,22 +410,6 @@ textarea {
     color: #504B38;
 }
 
-footer {
-    padding: 28px 6%;
-    background-color: #504B38;
-    color: #F8F3D9;
-    text-align: center;
-}
-
-footer nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer a {
-    color: #F8F3D9;
-}
 
 @media (max-width: 950px) {
     .filter-grid {

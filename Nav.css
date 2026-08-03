@@ -17,9 +17,10 @@
         max-width: none;
         margin: 0 auto;
         
+        
         border: none;
         border-bottom: 2px solid #111111;
-        background-color: rgb(249, 243, 218);
+        background-color: #B9B28A;
       /*position: fixed;*/
 
     }

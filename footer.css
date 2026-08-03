@@ -1,9 +1,16 @@
 .footer {
     margin-top: 70px;
     border-top: 2px solid #111111;
-    background: #f4f4f4;
+    background: #B9B28A;
     color: #111111;
     font-family: Arial, Helvetica, sans-serif;
+}
+/* Keeps the Fotter at the bottom of the page 
+will rmeove if it messes with responsiveness*/
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
