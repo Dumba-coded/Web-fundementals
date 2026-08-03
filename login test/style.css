@@ -1,30 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body{
-    background-color: rgba(0, 0, 0, 0.795);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
 
 .container{
-    background-color: #fff;
+    background-color: #F8F3D9;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
     position: relative;
     overflow: hidden;
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container p{
@@ -46,7 +29,7 @@ body{
 }
 
 .container button{
-    background-color: rgb(255, 13, 13);
+    background-color: #504B38;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -60,12 +43,12 @@ body{
 }
 
 .container button.hidden{
-    background-color: transparent;
+    background-color: #504B38;
     border-color: #fff;
 }
 
 .container form{
-    background-color: #fff;
+    background-color: #EBE5C2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +143,7 @@ body{
 }
 
 .toggle{
-    background-color: rgba(255, 4, 4, 0.952);
+    background-color: #504B38;
     height: 100%;
     color: #fff;
     position: relative;
@@ -188,6 +171,7 @@ body{
     top: 0;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
+    background-color: #B9B28A;
 }
 
 .toggle-left{
