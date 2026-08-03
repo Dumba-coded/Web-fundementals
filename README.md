@@ -73,3 +73,23 @@ MEETINGS
 15th - Second Phsycial Meeting
 17th - Third Onlien meeting
 21st - Meeting (Define consistencies and give feedback on Wireframes)
+30th - Meeting with Kiwi for Catalouge and consistencies
+
+
+
+
+
+
+
+
+Notes from meeting fifth meeting:
+Sticky navigation 
+hamburger 
+perfume images
+
+
+footers  
+
+
+
+
