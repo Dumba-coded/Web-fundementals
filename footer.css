@@ -5,13 +5,6 @@
     color: #111111;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Keeps the Fotter at the bottom of the page 
-will rmeove if it messes with responsiveness*/
-footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
 
 .footer-container {
     display: flex;
