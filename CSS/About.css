@@ -2,7 +2,10 @@ main {
 height: 400px;
 width:100%;
 background-color: #23b026;
+background-image: url(../a-sea.png); /* I am wokring on it */
+background-size: cover;
 }
+
 
 section {
     height: 600px;
