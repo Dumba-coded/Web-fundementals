@@ -1,0 +1,11 @@
+main {
+height: 400px;
+width:100%;
+background-color: #23b026;
+}
+
+section {
+    height: 600px;
+    width: 100%;
+    background-color: #3048b4;
+}
