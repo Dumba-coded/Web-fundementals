@@ -23,6 +23,11 @@
         background-color: #B9B28A;
       /*position: fixed;*/
 
+    position: sticky;
+    top: 0;
+    z-index: 2000;   
+    /*Pushes it the front most part of the webiste*/
+
     }
 
     .navbar-top {
