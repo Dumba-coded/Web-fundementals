@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/Nav.css">
-    <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/About.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the team behind SEASONS fragrance.">
+  <title>About Us | SEASONS</title>
+  <link rel="stylesheet" href="CSS/Nav.css">
+  <link rel="stylesheet" href="CSS/About.css">
+  <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
-    
-    <nav class="navbar" aria-label="Main navigation">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-top">
-      <a href="Index.html" class="brand">
-        <span class="brand-icon" aria-hidden="true"><img src="images/seasonslogo.png"></span>
-        <span class="brand-name"> SEASONS</span>
+      <a href="Index.html" class="brand" aria-label="SEASONS home">
+        <span class="brand-icon" aria-hidden="true"><img src="images/seasonslogo.png" alt=""></span>
+        <span class="brand-name">SEASONS</span>
       </a>
-
       <div class="nav-actions">
         <a href="catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
         <a href="login.html" class="nav-icon" aria-label="Account">♟</a>
       </div>
     </div>
-
     <ul class="nav-links">
       <li><a href="Index.html">Home</a></li>
-      <li><a class="active" href="About.html">About Us</a></li>
-      <li><a href="catalouge.html" >Catalogue</a></li>
+      <li><a class="active" href="About.html" aria-current="page">About Us</a></li>
+      <li><a href="catalouge.html">Catalogue</a></li>
       <li><a href="login.html">Login</a></li>
       <li><a href="Reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
+  <main>
+    <section class="about-banner" aria-labelledby="about-title">
+      <img src="images/about-banner-placeholder.svg" alt="Placeholder for the SEASONS team banner">
+      <div class="banner-overlay"></div>
+      <div class="banner-copy">
+        <p>Behind the fragrance</p>
+        <h1 id="about-title">Meet Our Team</h1>
+        <span>Four creators. One shared vision.</span>
+      </div>
+    </section>
 
-<main>
+    <section class="about-intro" aria-labelledby="our-story-title">
+      <p class="section-label">Our story</p>
+      <h2 id="our-story-title">We created SEASONS to make fragrance discovery feel personal.</h2>
+      <p>SEASONS is a student-led fragrance website designed around the idea that every scent carries a mood, a memory, and a moment. Our team combined research, design, development, and storytelling to create a welcoming digital experience for fragrance lovers.</p>
+    </section>
 
+    <section class="team-section" aria-labelledby="team-title">
+      <div class="team-heading">
+        <div>
+          <p class="section-label">The people</p>
+          <h2 id="team-title">Our creative team</h2>
+        </div>
+        <p>Select a member to view their individual portfolio.</p>
+      </div>
 
+      <div class="team-grid">
+        <article class="member-card">
+          <a href="Member Portfolios/member-one.html" aria-label="View Team Member One's portfolio">
+            <div class="member-photo"><span class="member-number">01</span><img src="images/profile-placeholder-1.svg" alt="Placeholder portrait for Team Member One"></div>
+            <div class="member-details"><div><p>Project role</p><h3>Team Member One</h3><span>Project Manager</span></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
 
-</main>
+        <article class="member-card">
+          <a href="Member Portfolios/member-two.html" aria-label="View Team Member Two's portfolio">
+            <div class="member-photo"><span class="member-number">02</span><img src="images/profile-placeholder-2.svg" alt="Placeholder portrait for Team Member Two"></div>
+            <div class="member-details"><div><p>Project role</p><h3>Team Member Two</h3><span>Web Designer</span></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
 
+        <article class="member-card">
+          <a href="Member Portfolios/member-three.html" aria-label="View Team Member Three's portfolio">
+            <div class="member-photo"><span class="member-number">03</span><img src="images/profile-placeholder-3.svg" alt="Placeholder portrait for Team Member Three"></div>
+            <div class="member-details"><div><p>Project role</p><h3>Team Member Three</h3><span>Front-End Developer</span></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
 
-<section>
+        <article class="member-card">
+          <a href="Member Portfolios/member-four.html" aria-label="View Team Member Four's portfolio">
+            <div class="member-photo"><span class="member-number">04</span><img src="images/profile-placeholder-4.svg" alt="Placeholder portrait for Team Member Four"></div>
+            <div class="member-details"><div><p>Project role</p><h3>Team Member Four</h3><span>Content &amp; Research</span></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+      </div>
+    </section>
 
-Hello hello 
+    <section class="values-strip" aria-label="Our team values">
+      <span>Thoughtful design</span><span>Accessible experiences</span><span>Creative collaboration</span><span>Memorable stories</span>
+    </section>
+  </main>
 
-</section>
-
-
-    <footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
-
-        <div class="footer-brand">
-            <h3><img src="images/seasonslogo.png" alt="SEASONS"> SEASONS</h3>
-            <p>Discover your signature scent.</p>
-        </div>
-
-        <div class="footer-links">
-            <h4>Navigation</h4>
-            <a href="Index.html">Home</a>
-            <a href="About.html">About Us</a>
-            <a href="catalouge.html">Catalogue</a>
-            <a href="Reviews.html">Reviews</a>
-            <a href="login.html">Login</a>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contact</h4>
-            <p>Email: fragrance@email.com</p>
-            <p>Phone: +60 12-345 6789</p>
-        </div>
-
+      <div class="footer-brand"><h3><img src="images/seasonslogo.png" alt=""> SEASONS</h3><p>Discover your signature scent.</p></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="Index.html">Home</a><a href="About.html">About Us</a><a href="catalouge.html">Catalogue</a><a href="Reviews.html">Reviews</a><a href="login.html">Login</a></div>
+      <div class="footer-contact"><h4>Contact</h4><p>Email: fragrance@email.com</p><p>Phone: +60 12-345 6789</p></div>
     </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 SEASONS. All Rights Reserved.</p>
-    </div>
-</footer>
-  
+    <div class="footer-bottom"><p>&copy; 2026 SEASONS. All Rights Reserved.</p></div>
+  </footer>
 </body>
 </html>

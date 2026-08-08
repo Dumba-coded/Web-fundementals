@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#504B38"/><stop offset=".55" stop-color="#B9B28A"/><stop offset="1" stop-color="#EBE5C2"/></linearGradient></defs>
+  <rect width="1600" height="600" fill="url(#g)"/>
+  <circle cx="1190" cy="300" r="215" fill="#F8F3D9" opacity=".35"/>
+  <circle cx="1380" cy="190" r="120" fill="#504B38" opacity=".18"/>
+  <path d="M930 490c150-240 390-270 600-110" fill="none" stroke="#F8F3D9" stroke-width="2" opacity=".5"/>
+  <text x="1260" y="310" text-anchor="middle" fill="#504B38" font-family="Georgia,serif" font-size="34">BANNER IMAGE</text>
+  <text x="1260" y="350" text-anchor="middle" fill="#504B38" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">REPLACE THIS PLACEHOLDER</text>
+</svg>
