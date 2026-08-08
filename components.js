@@ -1,15 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    fetch("header.html")
-        .then(response => response.text())
+    fetch("nav.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load nav.html");
+            }
+            return response.text();
+        })
         .then(data => {
             document.getElementById("header").innerHTML = data;
-        });
+        })
+        .catch(error => console.error("Error loading header:", error));
 
     fetch("footer.html")
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load footer.html");
+            }
+            return response.text();
+        })
         .then(data => {
             document.getElementById("footer").innerHTML = data;
-        });
+        })
+        .catch(error => console.error("Error loading footer:", error));
 
 });
