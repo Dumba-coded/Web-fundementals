@@ -3,6 +3,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      cursor: url("cursor.png"), auto;
     }
 
     body {
@@ -133,4 +134,12 @@
     .nav-links a.active {
     text-decoration: underline;
     text-underline-offset: 7px;
+    }
+
+    @media (max-width: 700px) {
+      .navbar-top { height: 54px; }
+      .nav-links { height: auto; padding: 13px 10px; gap: 7px 17px; flex-wrap: wrap; }
+      .nav-links li:not(:last-child)::after { display: none; }
+      .nav-links a { font-size: 14px; }
+      .nav-actions { gap: 18px; }
     }
