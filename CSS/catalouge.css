@@ -7,6 +7,8 @@
 
 * {
     box-sizing: border-box;
+    
+    cursor: url("cursor.png"), auto;
 }
 
 html {
@@ -17,6 +19,7 @@ body {
     margin: 0;
     background-color: #F8F3D9;
     color: #504B38;
+    
 }
 
 button,
@@ -225,22 +228,12 @@ legend {
 }
 
 .perfume-card {
-    position: relative; /*PROBELMMMMMMM*/
+    position: relative;
     padding: 18px;
     background-color: #EBE5C2;
     border: 1px solid #B9B28A;
     border-radius: 12px;
     text-align: center;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.perfume-card:hover {
-    transform: scale(1.04); /*i think this too*/
-    box-shadow:
-        0 10px 24px
-        rgba(80, 75, 56, 0.18);
 }
 
 .perfume-card[hidden] {
@@ -248,12 +241,27 @@ legend {
 }
 
 .image-placeholder {
-    height: 190px;
-    margin-bottom: 16px;
-    background-color: #F8F3D9;
-    border: 1px dashed #504B38;
-    display: grid;
-    place-items: center;
+    width: 100%;
+    height: 260px;          
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.image-placeholder:hover img {
+    transform: scale(1.12);
 }
 
 .perfume-card h3 {
