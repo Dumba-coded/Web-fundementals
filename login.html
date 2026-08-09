@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/Nav.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/Login.css">
-    <script src="theme-toggle.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Login & Registration | SEASONS</title>
+
+  <link rel="stylesheet" href="CSS/Nav.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/Login.css">
+
+  <script src="theme-toggle.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
+
 <body>
- <nav class="navbar" aria-label="Main navigation">
+
+  <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-top">
-      <a href="Index.html" class="brand">
-        <span class="brand-icon" aria-hidden="true"><img src="images/seasonslogo.png"></span>
-        <span class="brand-name"> SEASONS</span>
+
+      <a href="Index.html" class="brand" aria-label="SEASONS home">
+        <span class="brand-icon" aria-hidden="true">
+          <img src="images/seasonslogo.png" alt="">
+        </span>
+
+        <span class="brand-name">SEASONS</span>
       </a>
 
       <div class="nav-actions">
-        <a href="catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
-        <a href="login.html" class="nav-icon" aria-label="Account">♟</a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <a
+          href="catalouge.html"
+          class="nav-icon search-icon"
+          aria-label="Search catalogue"
+        >
+          ⌕
+        </a>
+
+        <a
+          href="login.html"
+          class="nav-icon"
+          aria-label="Account"
+        >
+          ♟
+        </a>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
           <span class="theme-icon sun-icon" aria-hidden="true">☀</span>
           <span class="theme-icon moon-icon" aria-hidden="true">☾</span>
         </button>
@@ -31,104 +59,527 @@
     <ul class="nav-links">
       <li><a href="Index.html">Home</a></li>
       <li><a href="About.html">About Us</a></li>
-      <li><a href="catalouge.html" >Catalogue</a></li>
-      <li><a class="active" href="login.html">Login</a></li>
+      <li><a href="catalouge.html">Catalogue</a></li>
+
+      <li>
+        <a
+          class="active"
+          href="login.html"
+          aria-current="page"
+        >
+          Login
+        </a>
+      </li>
+
       <li><a href="Reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
+  <main class="login">
 
- <div class="login">
     <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icons"><i class="bx bxl-google"></i></a>
-                    <a href="#" class="icons"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="icons"><i class="bx bxl-github"></i></a>
-                    <a href="#" class="icons"><i class="bx bxl-linkedin"></i></a>
-                </div>
-                <span>Register with E-mail</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Enter E-mail">
-                <input type="password" placeholder="Enter Password">
-                <input type="text" placeholder="Phone Number">
-                
-                <button>Sign Up</button>
-            </form>
-        </div>
 
+      <!-- Registration form -->
 
-        <div class="form-container sign-in">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icons"><i class="bx bxl-google"></i></a>
-                    <a href="#" class="icons"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="icons"><i class="bx bxl-github"></i></a>
-                    <a href="#" class="icons"><i class="bx bxl-linkedin"></i></a>
-                </div>
-                <span>Login With Email &amp; Password</span>
-                <input type="email" placeholder="Enter E-mail">
-                <input type="password" placeholder="Enter Password">
-                <a href="#">Forget Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
+      <div class="form-container sign-up">
 
+        <form id="registration-form" novalidate>
 
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome To <br>SEASONS</h1>
-                    <p>Sign in With ID &amp; Passowrd</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Welcome Back</h1>
-                    <p>Sign up with your details</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
+          <h1>Create Account</h1>
+
+          <span class="form-subtitle">
+            Register with email in three steps
+          </span>
+
+          <div
+            class="registration-progress"
+            aria-label="Registration progress"
+          >
+            <div class="progress-line">
+              <span id="progress-fill"></span>
             </div>
+
+            <ol>
+              <li class="active" data-progress-step="1">
+                <span>1</span>
+                Personal
+              </li>
+
+              <li data-progress-step="2">
+                <span>2</span>
+                Security
+              </li>
+
+              <li data-progress-step="3">
+                <span>3</span>
+                Preferences
+              </li>
+            </ol>
+          </div>
+
+          <!-- Step 1 -->
+
+          <fieldset class="registration-step" data-step="1">
+
+            <legend>Personal Details</legend>
+
+            <div class="input-group">
+              <label for="register-name">Full name</label>
+
+              <input
+                id="register-name"
+                type="text"
+                autocomplete="name"
+                placeholder="Full Name"
+                required
+              >
+
+              <small
+                id="register-name-error"
+                class="error-message"
+              ></small>
+            </div>
+
+            <div class="input-group">
+              <label for="register-email">Email address</label>
+
+              <input
+                id="register-email"
+                type="email"
+                autocomplete="email"
+                placeholder="Email Address"
+                required
+              >
+
+              <small
+                id="register-email-error"
+                class="error-message"
+              ></small>
+            </div>
+
+            <div class="input-group">
+              <label for="register-phone">Phone number</label>
+
+              <input
+                id="register-phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="Phone Number"
+                required
+              >
+
+              <small
+                id="register-phone-error"
+                class="error-message"
+              ></small>
+            </div>
+
+          </fieldset>
+
+          <!-- Step 2 -->
+
+          <fieldset
+            class="registration-step"
+            data-step="2"
+            hidden
+          >
+
+            <legend>Account Security</legend>
+
+            <div class="input-group">
+              <label for="register-password">
+                Create password
+              </label>
+
+              <div class="password-field">
+                <input
+                  id="register-password"
+                  type="password"
+                  autocomplete="new-password"
+                  placeholder="Create Password"
+                  required
+                >
+
+                <button
+                  class="password-toggle"
+                  type="button"
+                  data-password-target="register-password"
+                  aria-label="Show password"
+                >
+                  Show
+                </button>
+              </div>
+
+              <small
+                id="register-password-error"
+                class="error-message"
+              ></small>
+            </div>
+
+            <ul class="password-rules">
+              <li id="rule-length">8+ characters</li>
+              <li id="rule-uppercase">Uppercase letter</li>
+              <li id="rule-number">Number</li>
+            </ul>
+
+            <div class="input-group">
+              <label for="confirm-password">
+                Confirm password
+              </label>
+
+              <div class="password-field">
+                <input
+                  id="confirm-password"
+                  type="password"
+                  autocomplete="new-password"
+                  placeholder="Confirm Password"
+                  required
+                >
+
+                <button
+                  class="password-toggle"
+                  type="button"
+                  data-password-target="confirm-password"
+                  aria-label="Show confirmed password"
+                >
+                  Show
+                </button>
+              </div>
+
+              <small
+                id="confirm-password-error"
+                class="error-message"
+              ></small>
+            </div>
+
+          </fieldset>
+
+          <!-- Step 3 -->
+
+          <fieldset
+            class="registration-step"
+            data-step="3"
+            hidden
+          >
+
+            <legend>Fragrance Preferences</legend>
+
+            <div class="input-group">
+              <label for="fragrance-family">
+                Favourite fragrance family
+              </label>
+
+              <select id="fragrance-family" required>
+                <option value="">
+                  Choose a fragrance family
+                </option>
+
+                <option value="Floral">Floral</option>
+                <option value="Fresh">Fresh</option>
+                <option value="Woody">Woody</option>
+                <option value="Oriental">Oriental</option>
+                <option value="Citrus">Citrus</option>
+              </select>
+
+              <small
+                id="fragrance-family-error"
+                class="error-message"
+              ></small>
+            </div>
+
+            <fieldset class="season-group">
+              <legend>Favourite season</legend>
+
+              <div class="season-options">
+
+                <label>
+                  <input
+                    type="radio"
+                    name="preferredSeason"
+                    value="Spring"
+                  >
+                  Spring
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="preferredSeason"
+                    value="Summer"
+                  >
+                  Summer
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="preferredSeason"
+                    value="Autumn"
+                  >
+                  Autumn
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="preferredSeason"
+                    value="Winter"
+                  >
+                  Winter
+                </label>
+
+              </div>
+
+              <small
+                id="preferred-season-error"
+                class="error-message"
+              ></small>
+            </fieldset>
+
+            <label class="terms">
+              <input id="accept-terms" type="checkbox">
+
+              I understand this is a login simulation.
+            </label>
+
+            <small
+              id="accept-terms-error"
+              class="error-message"
+            ></small>
+
+          </fieldset>
+
+          <div class="step-actions">
+
+            <button
+              id="previous-step"
+              class="secondary"
+              type="button"
+              hidden
+            >
+              Previous
+            </button>
+
+            <button id="next-step" type="button">
+              Next
+            </button>
+
+            <button
+              id="create-account"
+              type="submit"
+              hidden
+            >
+              Sign Up
+            </button>
+
+          </div>
+
+          <p
+            id="registration-message"
+            class="form-message"
+            aria-live="polite"
+          ></p>
+
+        </form>
+      </div>
+
+      <!-- Login form -->
+
+      <div class="form-container sign-in">
+
+        <form id="login-form" novalidate>
+
+          <h1>Sign In</h1>
+
+          <span class="form-subtitle">
+            Login with email and password
+          </span>
+
+          <div class="input-group">
+            <label for="login-email">Email address</label>
+
+            <input
+              id="login-email"
+              type="email"
+              autocomplete="email"
+              placeholder="Enter Email"
+              required
+            >
+
+            <small
+              id="login-email-error"
+              class="error-message"
+            ></small>
+          </div>
+
+          <div class="input-group">
+            <label for="login-password">Password</label>
+
+            <div class="password-field">
+              <input
+                id="login-password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter Password"
+                required
+              >
+
+              <button
+                class="password-toggle"
+                type="button"
+                data-password-target="login-password"
+                aria-label="Show password"
+              >
+                Show
+              </button>
+            </div>
+
+            <small
+              id="login-password-error"
+              class="error-message"
+            ></small>
+          </div>
+
+          <button
+            id="forgot-password"
+            class="forgot-button"
+            type="button"
+          >
+            Forgot Password?
+          </button>
+
+          <button type="submit">
+            Sign In
+          </button>
+
+          <p
+            id="login-message"
+            class="form-message"
+            aria-live="polite"
+          ></p>
+
+          <p class="demo-details">
+            Demo: demo@seasons.com / Seasons123
+          </p>
+
+        </form>
+
+        <!-- Successful login -->
+
+        <div
+          id="welcome-panel"
+          class="welcome-panel"
+          hidden
+          aria-live="polite"
+        >
+
+          <span class="welcome-icon" aria-hidden="true">✓</span>
+
+          <h1 id="welcome-heading">Welcome!</h1>
+
+          <p id="welcome-description"></p>
+
+          <a
+            class="catalogue-button"
+            href="catalouge.html"
+          >
+            Explore Catalogue
+          </a>
+
+          <button id="sign-out" type="button">
+            Sign Out
+          </button>
+
         </div>
+      </div>
+
+      <!-- Sliding panel -->
+
+      <div class="toggle-container">
+
+        <div class="toggle">
+
+          <div class="toggle-panel toggle-left">
+            <h1>
+              Welcome To
+              <br>
+              SEASONS
+            </h1>
+
+            <p>
+              Already registered? Sign in with your email
+              and password.
+            </p>
+
+            <button
+              class="hidden"
+              id="login"
+              type="button"
+            >
+              Sign In
+            </button>
+          </div>
+
+          <div class="toggle-panel toggle-right">
+            <h1>Welcome Back</h1>
+
+            <p>
+              New to SEASONS? Create your simulated
+              fragrance account.
+            </p>
+
+            <button
+              class="hidden"
+              id="register"
+              type="button"
+            >
+              Sign Up
+            </button>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-    </div>
+  </main>
 
-    <script src="script.js"></script>
-    
+  <footer class="footer">
 
-
-
-     <footer class="footer">
     <div class="footer-container">
 
-        <div class="footer-brand">
-            <h3><img src="images/seasonslogo.png" alt="SEASONS"> SEASONS</h3>
-            <p>Discover your signature scent.</p>
-        </div>
+      <div class="footer-brand">
+        <h3>
+          <img src="images/seasonslogo.png" alt="">
+          SEASONS
+        </h3>
 
-        <div class="footer-links">
-            <h4>Navigation</h4>
-            <a href="Index.html">Home</a>
-            <a href="About.html">About Us</a>
-            <a href="catalouge.html">Catalogue</a>
-            <a href="Reviews.html">Reviews</a>
-            <a href="login.html">Login</a>
-        </div>
+        <p>Discover your signature scent.</p>
+      </div>
 
-        <div class="footer-contact">
-            <h4>Contact</h4>
-            <p>Email: fragrance@email.com</p>
-            <p>Phone: +60 12-345 6789</p>
-        </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+
+        <a href="Index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="catalouge.html">Catalogue</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+
+        <p>Email: fragrance@email.com</p>
+        <p>Phone: +60 12-345 6789</p>
+      </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 SEASONS. All Rights Reserved.</p>
+      <p>&copy; 2026 SEASONS. All Rights Reserved.</p>
     </div>
-</footer>
+
+  </footer>
 
 </body>
 </html>
