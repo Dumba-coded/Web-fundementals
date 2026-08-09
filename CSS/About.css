@@ -206,3 +206,174 @@
   background: var(--deep-olive);
   color: var(--cream);
 }
+```css
+/* =========================
+   MEMBER ACTION BUTTONS
+========================= */
+
+.member-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.member-action-btn {
+  display: inline-block;
+  width: auto;
+  padding: 8px 12px;
+  background: var(--cream);
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.member-action-btn:hover {
+  background: var(--deep-olive);
+  color: var(--cream);
+}
+
+
+/* =========================
+   CONTRIBUTION DROPDOWN
+========================= */
+
+.contribution-dropdown {
+  width: 100%;
+}
+
+.contribution-dropdown summary {
+  list-style: none;
+}
+
+.contribution-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.contribution-dropdown[open] > summary {
+  background: var(--deep-olive);
+  color: var(--cream);
+}
+
+
+/* =========================
+   CONTRIBUTION CONTENT
+========================= */
+
+.contribution-content {
+  width: 100%;
+  margin-top: 10px;
+  padding: 18px;
+  background: var(--cream);
+  border: 1px solid var(--ink);
+  color: var(--ink);
+}
+
+.contribution-content h4 {
+  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.contribution-content p {
+  margin-bottom: 15px;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.contribution-content h5 {
+  margin: 18px 0 8px;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contribution-content ul {
+  margin: 0 0 15px;
+  padding-left: 17px;
+}
+
+.contribution-content li {
+  margin-bottom: 6px;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.technology-text {
+  padding-top: 10px;
+  border-top: 1px solid var(--ink);
+}
+
+
+/* =========================
+   CONTRIBUTION STATISTICS
+========================= */
+
+.contribution-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+
+.contribution-stats div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.contribution-stats strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.contribution-stats span {
+  margin-top: 3px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.contribution-stats small {
+  margin-top: 3px;
+  color: #686353;
+  font-size: 0.62rem;
+  line-height: 1.4;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 620px) {
+
+  .member-actions {
+    width: 100%;
+  }
+
+  .member-action-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contribution-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+```
