@@ -37,7 +37,6 @@ body{
   overflow:hidden;
 }
 
-/* ---------- Topbar ---------- */
 .topbar{
   display:flex;
   align-items:center;
@@ -114,7 +113,6 @@ body{
   border-top:1px solid var(--line);
 }
 
-/* ---------- Hero ---------- */
 .hero{
   display:grid;
   grid-template-columns:1.05fr 0.85fr auto;
@@ -213,7 +211,6 @@ body{
   .stats{ flex-direction:row; flex-wrap:wrap; }
 }
 
-/* ---------- Trusted by ---------- */
 .trusted{
   padding:36px 0 48px;
   border-top:1px solid var(--line);
@@ -263,7 +260,6 @@ body{
   .logo-row{ animation:none; flex-wrap:wrap; width:auto; }
 }
 
-/* ---------- About ---------- */
 .about{
   display:grid;
   grid-template-columns:0.8fr 1.2fr;
@@ -288,7 +284,6 @@ body{
   .about{ grid-template-columns:1fr; }
 }
 
-/* ---------- Portfolio ---------- */
 .portfolio{
   padding:48px 0 0;
   border-top:1px solid var(--line);
@@ -359,7 +354,6 @@ body{
   color:rgba(243,239,227,0.75);
 }
 
-/* ---------- Contact footer ---------- */
 .contact{
   display:flex;
   align-items:center;
