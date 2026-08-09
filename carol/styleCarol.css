@@ -1,46 +1,51 @@
-
 :root {
-
-  /* SEASONS colour palette */
+  
   --color-bg: #F8F3D9;
   --color-bg-dark: #EBE5C2;
   --color-olive: #B9B28A;
   --color-deep: #504B38;
 
-  /* Supporting colours */
   --color-white: #ffffff;
   --color-soft-white: rgba(255, 255, 255, 0.65);
   --color-border: rgba(80, 75, 56, 0.18);
 
-  /* Typography */
   --font-main: "DM Mono", monospace;
   --font-heading: "Playfair Display", serif;
 
-  /* Layout */
   --spacing-base: 1rem;
   --spacing-section: 7rem;
   --content-width: 1400px;
 
-  /* Components */
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 28px;
   --radius-pill: 999px;
 
-  /* Effects */
+
   --shadow-sm: 0 5px 18px rgba(80, 75, 56, 0.08);
   --shadow-md: 0 15px 40px rgba(80, 75, 56, 0.12);
 
   --transition-fast: 0.2s ease;
   --transition-normal: 0.35s ease;
-
 }
 
+body.dark-mode {
+  --color-bg: #504B38;
+  --color-bg-dark: #6A644D;
+  --color-olive: #B9B28A;
+  --color-deep: #F8F3D9;
+
+  --color-white: #F8F3D9;
+  --color-soft-white: rgba(248, 243, 217, 0.65);
+  --color-border: rgba(248, 243, 217, 0.18);
+
+  --shadow-sm: 0 5px 18px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
 
 @import url(
   "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
 );
-
 
 * {
   box-sizing: border-box;
@@ -59,6 +64,9 @@ body {
   font-family: var(--font-main);
   line-height: 1.6;
   min-height: 100vh;
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal);
 }
 
 img {
@@ -83,9 +91,10 @@ button {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid var(--color-deep);
+  outline: 3px solid var(--color-olive);
   outline-offset: 4px;
 }
+
 
 h1,
 h2,
@@ -93,6 +102,7 @@ h3 {
   color: var(--color-deep);
   font-family: var(--font-heading);
   line-height: 1.1;
+  transition: color var(--transition-normal);
 }
 
 h1 {
@@ -132,8 +142,6 @@ p {
   margin-bottom: 0.5rem;
 }
 
-
-
 .section {
   margin: 0 auto;
   max-width: var(--content-width);
@@ -151,7 +159,6 @@ p {
   max-width: 700px;
 }
 
-
 .site-header {
   align-items: center;
   background: rgba(248, 243, 217, 0.92);
@@ -165,6 +172,14 @@ p {
   top: 0;
   width: 100%;
   z-index: 1000;
+
+  transition:
+    background-color var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+body.dark-mode .site-header {
+  background: rgba(80, 75, 56, 0.92);
 }
 
 .brand {
@@ -185,6 +200,9 @@ p {
   height: 36px;
   justify-content: center;
   width: 36px;
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal);
 }
 
 .site-nav {
@@ -217,6 +235,35 @@ p {
 }
 
 
+.theme-toggle {
+  align-items: center;
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-deep);
+  cursor: pointer;
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  margin-left: 1rem;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+  width: 38px;
+}
+
+.theme-toggle:hover {
+  background: var(--color-olive);
+  color: var(--color-deep);
+  transform: rotate(15deg);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--color-olive);
+  outline-offset: 3px;
+}
+
 .menu-toggle {
   background: transparent;
   cursor: pointer;
@@ -244,7 +291,6 @@ p {
 .menu-toggle.is-active span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -7px);
 }
-
 
 .button {
   align-items: center;
@@ -299,10 +345,10 @@ p {
   display: grid;
   gap: 5rem;
   grid-template-columns: 1.15fr 0.85fr;
-  min-height: 100vh;
-  padding-top: 9rem;
+  min-height: calc(100vh - 9rem); 
+  padding-top: 9rem;              
+  padding-bottom: 3rem;           
 }
-
 .hero-copy {
   animation: fadeUp 0.8s ease both;
 }
@@ -328,6 +374,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   max-width: 650px;
   padding: 1.3rem;
+  transition: background-color var(--transition-normal);
 }
 
 .quick-facts div {
@@ -371,7 +418,6 @@ p {
   width: 100%;
 }
 
-
 .floating-card {
   align-items: center;
   animation: floating 5s ease-in-out infinite;
@@ -384,6 +430,10 @@ p {
   gap: 0.7rem;
   padding: 0.8rem 1.1rem;
   position: absolute;
+}
+
+body.dark-mode .floating-card {
+  background: rgba(248, 243, 217, 0.12);
 }
 
 .floating-card strong {
@@ -442,7 +492,13 @@ p {
   flex-direction: column;
   gap: 1.2rem;
   padding: 2.5rem;
-  transition: transform var(--transition-normal);
+  transition:
+    transform var(--transition-normal),
+    background-color var(--transition-normal);
+}
+
+body.dark-mode .about-card {
+  background: rgba(248, 243, 217, 0.08);
 }
 
 .about-card:hover {
@@ -527,7 +583,13 @@ p {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: 2rem;
-  transition: transform var(--transition-normal);
+  transition:
+    transform var(--transition-normal),
+    background-color var(--transition-normal);
+}
+
+body.dark-mode .timeline-card {
+  background: rgba(248, 243, 217, 0.08);
 }
 
 .timeline-card:hover {
@@ -552,6 +614,7 @@ p {
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
+
 
 .skills-layout {
   align-items: start;
@@ -642,6 +705,7 @@ p {
   transform: translateY(-2px);
 }
 
+
 .project-grid {
   display: grid;
   gap: 2rem;
@@ -661,7 +725,12 @@ p {
   position: relative;
   transition:
     transform var(--transition-normal),
-    box-shadow var(--transition-normal);
+    box-shadow var(--transition-normal),
+    background-color var(--transition-normal);
+}
+
+body.dark-mode .project-card {
+  background: rgba(248, 243, 217, 0.08);
 }
 
 .project-card::before {
@@ -732,8 +801,6 @@ p {
 }
 
 
-
-
 .contact {
   padding-bottom: 8rem;
 }
@@ -767,8 +834,6 @@ p {
   max-width: 600px;
 }
 
-
-
 footer {
   border-top: 1px solid var(--color-border);
   padding: 3rem 5%;
@@ -790,7 +855,6 @@ footer a:hover {
 
 
 @keyframes fadeUp {
-
   from {
     opacity: 0;
     transform: translateY(25px);
@@ -800,12 +864,9 @@ footer a:hover {
     opacity: 1;
     transform: translateY(0);
   }
-
 }
 
-
 @keyframes floating {
-
   0%,
   100% {
     transform: translateY(0);
@@ -814,12 +875,9 @@ footer a:hover {
   50% {
     transform: translateY(-10px);
   }
-
 }
 
-
 @keyframes growProgress {
-
   from {
     transform: scaleX(0);
   }
@@ -827,11 +885,10 @@ footer a:hover {
   to {
     transform: scaleX(1);
   }
-
 }
 
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
   .hero {
     gap: 3rem;
     grid-template-columns: 1fr;
@@ -867,12 +924,10 @@ footer a:hover {
   .card-status {
     left: 5%;
   }
-
 }
 
 
 @media (max-width: 768px) {
-
   .menu-toggle {
     display: flex;
   }
@@ -923,11 +978,13 @@ footer a:hover {
     transform: scale(0.9);
   }
 
+  .theme-toggle {
+    margin-left: 0.5rem;
+  }
 }
 
 
 @media (max-width: 600px) {
-
   :root {
     --spacing-section: 5rem;
   }
@@ -993,11 +1050,14 @@ footer a:hover {
     padding: 4rem 1.5rem;
   }
 
+  .theme-toggle {
+    height: 34px;
+    width: 34px;
+  }
 }
 
 
 @media (prefers-reduced-motion: reduce) {
-
   html {
     scroll-behavior: auto;
   }
@@ -1009,5 +1069,8 @@ footer a:hover {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-
+}
+#sparkle-canvas {
+  position: fixed;
+  inset: 0;
 }
