@@ -145,7 +145,7 @@
     }
 
 
-/*dark mode and theme toggle*/
+/* Dark mode and theme toggle */
 :root {
   --bg-color: #F8F3D9;
   --text-color: #111111;
@@ -153,11 +153,13 @@
   --border-color: #111111;
 }
 
+html.dark-theme,
 body.dark-theme {
   --bg-color: #1a1a1a;
   --text-color: #f8f3d9;
-  --nav-bg: #2d2b22;
+  --nav-bg: #24231d;
   --border-color: #f8f3d9;
+  color-scheme: dark;
 }
 
 body {
@@ -190,19 +192,170 @@ body {
 
 /* Theme Toggle Button Styling */
 .theme-toggle {
-  background: transparent;
-  border: none;
+  position: relative;
+  width: 48px;
+  height: 26px;
+  padding: 2px;
+  background: #F8F3D9;
+  border: 1.5px solid var(--border-color);
+  border-radius: 30px;
   color: var(--text-color);
-  font-size: 20px;
   cursor: pointer;
-  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  line-height: 1;
-  transition: transform 0.2s ease, color 0.3s ease;
+  justify-content: space-between;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .theme-toggle:hover {
-  transform: scale(1.15);
+  transform: scale(1.06);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.theme-toggle::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #504B38;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.theme-icon {
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  color: #504B38;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.sun-icon {
+  color: #F8F3D9;
+}
+
+html.dark-theme .theme-toggle,
+body.dark-theme .theme-toggle {
+  background: #111111;
+}
+
+html.dark-theme .theme-toggle::after,
+body.dark-theme .theme-toggle::after {
+  background: #F8F3D9;
+  transform: translateX(22px);
+}
+
+html.dark-theme .sun-icon,
+body.dark-theme .sun-icon {
+  color: #d8a638;
+}
+
+html.dark-theme .moon-icon,
+body.dark-theme .moon-icon {
+  color: #111111;
+}
+
+/* Site-wide dark theme */
+html.dark-theme body,
+body.dark-theme {
+  background-color: #171713 !important;
+  color: #F8F3D9 !important;
+}
+
+body.dark-theme main,
+body.dark-theme .hero,
+body.dark-theme .hero-copy,
+body.dark-theme .benefits,
+body.dark-theme .season-section,
+body.dark-theme .featured,
+body.dark-theme .search-section,
+body.dark-theme #perfumes,
+body.dark-theme .about-intro,
+body.dark-theme .team-section,
+body.dark-theme .review-form-section,
+body.dark-theme .reviews-display-section,
+body.dark-theme .login {
+  background-color: #1c1c18 !important;
+  color: #F8F3D9 !important;
+}
+
+body.dark-theme .hero-visual,
+body.dark-theme .values-strip,
+body.dark-theme .footer,
+body.dark-theme .footer-bottom {
+  background-color: #2d2b22 !important;
+  color: #F8F3D9 !important;
+  border-color: #F8F3D9 !important;
+}
+
+body.dark-theme .product-image,
+body.dark-theme .product-card,
+body.dark-theme .perfume-card,
+body.dark-theme .member-card,
+body.dark-theme .review-card,
+body.dark-theme .profile-header,
+body.dark-theme .fun-fact-card,
+body.dark-theme .bio-box,
+body.dark-theme .education-box,
+body.dark-theme .skills-section,
+body.dark-theme .projects-section,
+body.dark-theme .project-card,
+body.dark-theme form,
+body.dark-theme fieldset,
+body.dark-theme .container,
+body.dark-theme .form-container form {
+  background-color: #282720 !important;
+  color: #F8F3D9 !important;
+  border-color: #B9B28A !important;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme p,
+body.dark-theme label,
+body.dark-theme legend,
+body.dark-theme .eyebrow,
+body.dark-theme .section-label,
+body.dark-theme .product-info p,
+body.dark-theme .member-details p,
+body.dark-theme .text-link,
+body.dark-theme .footer a {
+  color: #F8F3D9 !important;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+  background-color: #11110f !important;
+  color: #F8F3D9 !important;
+  border-color: #B9B28A !important;
+}
+
+body.dark-theme .season-card,
+body.dark-theme .story-image,
+body.dark-theme .about-banner,
+body.dark-theme .member-photo {
+  filter: brightness(0.72) saturate(0.85);
+}
+
+body.dark-theme .button-dark,
+body.dark-theme button:not(.theme-toggle) {
+  background-color: #B9B28A;
+  color: #111111;
+}
+
+body.dark-theme * {
+  border-color: var(--border-color);
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/Nav.css">
     <link rel="stylesheet" href="CSS/catalouge.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <script src="theme-toggle.js"></script>
       
 </head>
 <body>
@@ -25,18 +26,19 @@
       <div class="nav-actions">
         <a href="catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
         <a href="login.html" class="nav-icon" aria-label="Account">♟</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">☾</span>
+        </button>
       </div>
     </div>
 
     <ul class="nav-links">
       <li><a href="Index.html">Home</a></li>
       <li><a href="About.html">About Us</a></li>
-      <li><a href="catalogue.html" >Catalogue</a></li>
+      <li><a class="active" href="catalouge.html" aria-current="page">Catalogue</a></li>
       <li><a href="login.html">Login</a></li>
       <li><a href="Reviews.html">Reviews</a></li>
-      <li>
-        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">☾</button>
-      </li>
     </ul>
   </nav>
 
@@ -263,7 +265,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Chanel%20Coco%20Mademoiselle"
+                        href="Reviews.html?perfume=Chanel%20Coco%20Mademoiselle"
                         class="review-button"
                     >
                         Write a Review
@@ -304,7 +306,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Dior%20Sauvage"
+                        href="Reviews.html?perfume=Dior%20Sauvage"
                         class="review-button"
                     >
                         Write a Review
@@ -345,7 +347,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Gucci%20Bloom"
+                        href="Reviews.html?perfume=Gucci%20Bloom"
                         class="review-button"
                     >
                         Write a Review
@@ -385,7 +387,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Versace%20Eros"
+                        href="Reviews.html?perfume=Versace%20Eros"
                         class="review-button"
                     >
                         Write a Review
@@ -426,7 +428,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Yves%20Saint%20Laurent%20Libre"
+                        href="Reviews.html?perfume=Yves%20Saint%20Laurent%20Libre"
                         class="review-button"
                     >
                         Write a Review
@@ -467,7 +469,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Acqua%20di%20Gio"
+                        href="Reviews.html?perfume=Acqua%20di%20Gio"
                         class="review-button"
                     >
                         Write a Review
@@ -508,7 +510,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Burberry%20Her"
+                        href="Reviews.html?perfume=Burberry%20Her"
                         class="review-button"
                     >
                         Write a Review
@@ -549,7 +551,7 @@
                     </button>
 
                     <a
-                        href="reviews.html?perfume=Tom%20Ford%20Black%20Orchid"
+                        href="Reviews.html?perfume=Tom%20Ford%20Black%20Orchid"
                         class="review-button"
                     >
                         Write a Review
@@ -618,7 +620,6 @@
 
 
 <script src="catalouge.js"></script>
-<script src="theme-toggle.js"></script>  
 
     
 </body>
