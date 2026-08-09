@@ -20,41 +20,50 @@
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
 
-    <a class="brand" href="../Index.html" aria-label="Return to SEASONS homepage">
-      <span class="brand-mark">S</span>
-      <span>SEASONS</span>
+  <a class="brand" href="../Index.html" aria-label="Return to SEASONS homepage">
+    <span class="brand-mark">S</span>
+    <span>SEASONS</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="site-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav
+    class="site-nav"
+    id="site-navigation"
+    aria-label="Portfolio navigation"
+  >
+    <a href="../About.html">Team About</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+
+    <a class="nav-button" href="cv.pdf" download>
+      Download CV
     </a>
 
     <button
-      class="menu-toggle"
+      class="theme-toggle"
       type="button"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-      aria-controls="site-navigation"
+      aria-label="Toggle dark mode"
     >
-      <span></span>
-      <span></span>
-      <span></span>
+      ☾
     </button>
+  </nav>
 
-    <nav
-      class="site-nav"
-      id="site-navigation"
-      aria-label="Portfolio navigation"
-    >
-      <a href="../About.html">Team About</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a class="nav-button" href="cv.pdf" download>
-        Download CV
-      </a>
-    </nav>
-
-  </header>
+</header>
 
 
   <main>
@@ -679,6 +688,7 @@
 
     });
   </script>
+  <script src="scriptCarol.js"></script>
 
 </body>
 </html>
