@@ -372,3 +372,64 @@ body{
   .card{ padding:24px 22px 0; border-radius:22px; }
   .page{ padding:14px; }
 }
+/* --- CV button spacing --- */
+.cv-btn{
+  margin-top:24px;
+}
+
+/* --- Skills section with CSS-only progress bars --- */
+.skills{
+  padding:36px 0 12px;
+  border-top:1px solid var(--line);
+}
+.skills h2{
+  font-family:var(--display);
+  font-size:1.6rem;
+  margin-bottom:20px;
+}
+.skill-bars{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  max-width:520px;
+}
+.skill-label{
+  display:flex;
+  justify-content:space-between;
+  font-size:0.9rem;
+  margin-bottom:6px;
+  color:var(--ink-soft);
+}
+.skill-track{
+  width:100%;
+  height:10px;
+  border-radius:6px;
+  background:var(--card-2);
+  overflow:hidden;
+}
+.skill-fill{
+  height:100%;
+  border-radius:6px;
+  background:var(--tan);
+  transition:width 0.6s ease;
+}
+
+/* --- Print stylesheet --- */
+@media print{
+  .navbar, .mobile-nav, .theme-toggle, .cv-btn, .logo-track{
+    display:none !important;
+  }
+  body{
+    background:#fff;
+  }
+  .card{
+    background:#fff;
+    box-shadow:none;
+    padding:0;
+  }
+  .page{
+    padding:0;
+    max-width:100%;
+  }
+}
