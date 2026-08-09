@@ -1,0 +1,16 @@
+/* Print-only portfolio styling required by the assessment rubric. */
+@page { size: A4; margin: 14mm; }
+* { color: #111 !important; background: transparent !important; box-shadow: none !important; animation: none !important; }
+body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; }
+.navbar, .footer, .hero-buttons, .portrait-accent, .contact-banner { display: none !important; }
+.portfolio-hero, .about-me, .education-section, .skills-section, .projects-section, .contributions-section, .reflection-section { min-height: 0; display: block; padding: 10mm 0; border-bottom: 1px solid #999; }
+.portfolio-hero { display: grid; grid-template-columns: 1fr 45mm; gap: 10mm; }
+.portrait-placeholder { min-height: 55mm; border: 1px solid #777; }
+.hero-copy h1 { font-size: 32pt; }
+.about-grid, .skill-list, .project-grid, .contribution-grid, .reflection-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6mm; }
+.skill-list article, .project-card, .contribution-grid article, .reflection-grid article { min-height: 0; padding: 5mm; border: 1px solid #999 !important; break-inside: avoid; }
+.project-image { height: 35mm; border: 1px solid #999; }
+.skill-track { border: 1px solid #555; }
+.skill-track span { background: #555 !important; }
+h2, h3, p { break-after: avoid; }
+a[href^="mailto:"]::after { content: " (" attr(href) ")"; }

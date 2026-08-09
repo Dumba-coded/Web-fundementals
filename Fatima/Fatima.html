@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet the team behind SEASONS fragrance.">
-  <title>About Us | SEASONS</title>
+  <meta name="description" content="Personal portfolio of Fatima, a student and aspiring web designer.">
+  <title>Fatima | Personal Portfolio</title>
   <link rel="stylesheet" href="../CSS/Nav.css">
-  <link rel="stylesheet" href="../CSS/About.css">
+  <link rel="stylesheet" href="Fatima.css">
+  <link rel="stylesheet" href="Fatima-print.css" media="print">
   <link rel="stylesheet" href="../CSS/footer.css">
   <script src="../theme-toggle.js" defer></script>
 </head>
 <body>
-    <nav class="navbar" aria-label="Main navigation">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-top">
       <a href="../Index.html" class="brand" aria-label="SEASONS home">
         <span class="brand-icon" aria-hidden="true"><img src="../images/seasonslogo.png" alt=""></span>
         <span class="brand-name">SEASONS</span>
       </a>
       <div class="nav-actions">
-        <a href="catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
-        <a href="login.html" class="nav-icon" aria-label="Account">♟</a>
+        <a href="../catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
+        <a href="../login.html" class="nav-icon" aria-label="Account">♟</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
           <span class="theme-icon sun-icon" aria-hidden="true">☀</span>
           <span class="theme-icon moon-icon" aria-hidden="true">☾</span>
@@ -27,20 +28,137 @@
       </div>
     </div>
     <ul class="nav-links">
-      <li><a href="Index.html">Home</a></li>
-      <li><a class="active" href="About.html" aria-current="page">About Us</a></li>
-      <li><a href="catalouge.html">Catalogue</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="Reviews.html">Reviews</a></li>
+      <li><a href="../Index.html">Home</a></li>
+      <li><a class="active" href="../About.html" aria-current="page">About Us</a></li>
+      <li><a href="../catalouge.html">Catalogue</a></li>
+      <li><a href="../login.html">Login</a></li>
+      <li><a href="../Reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
- 
+  <main>
+    <section class="portfolio-hero" aria-labelledby="portfolio-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, my name is</p>
+        <h1 id="portfolio-title">Fatima <span>[Surname]</span></h1>
+        <p class="role">Student · Aspiring Web Designer · Creative Thinker</p>
+        <p class="intro">I enjoy creating thoughtful digital experiences that combine clean design, creativity and simple, accessible code. This portfolio is a place for my work, growth and ideas.</p>
+        <div class="hero-buttons">
+          <a class="primary-button" href="#projects">View my work</a>
+          <a class="secondary-button" href="FatimaCV.html">View CV</a>
+          <a class="secondary-button" href="FatimaCV.html" download="Fatima-CV.html">Download CV</a>
+        </div>
+      </div>
+      <div class="portrait-card" aria-label="Portrait placeholder">
+        <div class="portrait-placeholder">
+          <span aria-hidden="true">♡</span>
+          <p>Your photo here</p>
+          <small>Replace with your image later</small>
+        </div>
+        <div class="portrait-accent" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="education-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading">
+        <p class="eyebrow">My learning journey</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span class="timeline-year">[2026–Present]</span>
+          <div><h3>[Programme / Qualification]</h3><p>[University or College]</p><p>[Add relevant modules, achievements, activities or your current study focus.]</p></div>
+        </article>
+        <article>
+          <span class="timeline-year">[Previous year]</span>
+          <div><h3>[Previous Qualification]</h3><p>[School / Institution]</p><p>[Add subjects, results, responsibilities or achievements that are relevant.]</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-me" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">A little more</p>
+        <h2 id="about-title">About me</h2>
+      </div>
+      <div class="about-grid">
+        <p>[Write a short introduction about yourself here. You could mention what you study, what interests you, what inspires your work and what kind of opportunities you hope to explore.]</p>
+        <div class="quick-facts">
+          <div><span>Based in</span><strong>[City, Country]</strong></div>
+          <div><span>Studying</span><strong>[Course / Programme]</strong></div>
+          <div><span>Interested in</span><strong>Design &amp; Technology</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">What I bring</p>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+      <div class="skill-list">
+        <article><div class="skill-title"><h3>HTML &amp; CSS</h3><span>[85%]</span></div><p>Building responsive, structured and visually engaging web pages.</p><div class="skill-track" role="img" aria-label="HTML and CSS skill: 85 percent"><span style="--skill-level:85%"></span></div></article>
+        <article><div class="skill-title"><h3>JavaScript</h3><span>[70%]</span></div><p>Adding useful interactions and dynamic behaviour to websites.</p><div class="skill-track" role="img" aria-label="JavaScript skill: 70 percent"><span style="--skill-level:70%"></span></div></article>
+        <article><div class="skill-title"><h3>Creative Design</h3><span>[80%]</span></div><p>Exploring colour, typography and layouts with a clear purpose.</p><div class="skill-track" role="img" aria-label="Creative design skill: 80 percent"><span style="--skill-level:80%"></span></div></article>
+        <article><div class="skill-title"><h3>Teamwork</h3><span>[90%]</span></div><p>Sharing ideas, listening carefully and contributing reliably.</p><div class="skill-track" role="img" aria-label="Teamwork skill: 90 percent"><span style="--skill-level:90%"></span></div></article>
+      </div>
+    </section>
+
+    <section class="contributions-section" id="contributions" aria-labelledby="contributions-title">
+      <div class="section-heading">
+        <p class="eyebrow">My role in the team</p>
+        <h2 id="contributions-title">Project contributions</h2>
+      </div>
+      <p class="section-lead">Replace each placeholder with a specific task you completed. Name the page or feature, explain what you built, and quantify the work where possible.</p>
+      <div class="contribution-grid">
+        <article><span>01</span><h3>[Page or feature owned]</h3><p>[Explain exactly what you designed or coded, including the HTML, CSS or JavaScript techniques used.]</p><strong>Evidence: [filename, screenshot or feature]</strong></article>
+        <article><span>02</span><h3>[Second contribution]</h3><p>[Describe your individual responsibility and what the completed feature allows the user to do.]</p><strong>Evidence: [filename, screenshot or feature]</strong></article>
+        <article><span>03</span><h3>[Testing or teamwork]</h3><p>[State how many pages, tests, fixes, meetings or design tasks you completed.]</p><strong>Evidence: [test table, commit or document]</strong></article>
+      </div>
+    </section>
+
+    <section class="reflection-section" aria-labelledby="reflection-title">
+      <div class="section-heading"><p class="eyebrow">Looking back</p><h2 id="reflection-title">Learning &amp; reflection</h2></div>
+      <div class="reflection-grid">
+        <article><h3>Skills developed</h3><p>[Explain the specific technical and soft skills you learned and connect them to what you built.]</p></article>
+        <article><h3>Challenge faced</h3><p>[Describe one genuine problem, why it happened, what you tried and how you solved it.]</p></article>
+        <article><h3>Future improvement</h3><p>[Explain what you would improve if you had more time and why that change would make the project better.]</p></article>
+      </div>
+      <p class="reflection-note">Your separate assessed reflection must be 500–800 words. Use these prompts as a summary, then expand them in the submitted document.</p>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading project-heading">
+        <div><p class="eyebrow">Selected work</p><h2 id="projects-title">My projects</h2></div>
+        <p>Add screenshots and links when your projects are ready.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image blush"><span>Project image</span></div>
+          <div class="project-copy"><p>Web Design</p><h3>SEASONS Fragrance Website</h3><span>HTML · CSS · JavaScript</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image rose"><span>Project image</span></div>
+          <div class="project-copy"><p>University Project</p><h3>[Your Second Project]</h3><span>[Tools / Skills used]</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image cream"><span>Project image</span></div>
+          <div class="project-copy"><p>Personal Work</p><h3>[Your Third Project]</h3><span>[Tools / Skills used]</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-banner" aria-labelledby="contact-title">
+      <p class="eyebrow">Let’s connect</p>
+      <h2 id="contact-title">Have an idea? I would love to hear about it.</h2>
+      <a href="mailto:yourname@email.com">yourname@email.com</a>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand"><h3><img src="../images/seasonslogo.png" alt=""> SEASONS</h3><p>Discover your signature scent.</p></div>
-      <div class="footer-links"><h4>Navigation</h4><a href="Index.html">Home</a><a href="About.html">About Us</a><a href="catalouge.html">Catalogue</a><a href="Reviews.html">Reviews</a><a href="login.html">Login</a></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="../Index.html">Home</a><a href="../About.html">About Us</a><a href="../catalouge.html">Catalogue</a><a href="../Reviews.html">Reviews</a><a href="../login.html">Login</a></div>
       <div class="footer-contact"><h4>Contact</h4><p>Email: fragrance@email.com</p><p>Phone: +60 12-345 6789</p></div>
     </div>
     <div class="footer-bottom"><p>&copy; 2026 SEASONS. All Rights Reserved.</p></div>

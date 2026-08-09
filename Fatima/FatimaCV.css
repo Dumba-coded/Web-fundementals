@@ -1,0 +1,24 @@
+:root { --paper:#fffdfb; --pink:#f6dbe2; --rose:#a95870; --ink:#4b3540; --muted:#755d68; }
+* { box-sizing:border-box; }
+body { margin:0; padding:40px 20px; background:#f4e8eb; color:var(--ink); font-family:Arial, Helvetica, sans-serif; }
+.page-actions { max-width:900px; display:flex; justify-content:space-between; margin:0 auto 16px; }
+.page-actions a, .page-actions button { border:1px solid var(--rose); background:var(--paper); color:var(--ink); padding:11px 16px; text-decoration:none; font:inherit; cursor:pointer; }
+.cv-page { max-width:900px; min-height:1100px; margin:auto; padding:65px 72px; background:var(--paper); box-shadow:0 12px 40px rgba(75,53,64,.14); }
+header { display:flex; justify-content:space-between; gap:50px; padding-bottom:30px; border-bottom:3px solid var(--pink); }
+.label { margin:0 0 8px; color:var(--rose); font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+h1 { margin:0; font-family:Georgia,serif; font-size:3.5rem; font-weight:400; letter-spacing:-.04em; }
+h1 em { color:var(--rose); font-weight:400; }
+.headline { color:var(--muted); }
+address { text-align:right; font-style:normal; line-height:1.7; }
+a { color:var(--rose); }
+section { padding:25px 0; border-bottom:1px solid var(--pink); }
+h2 { margin:0 0 16px; color:var(--rose); font-size:.75rem; letter-spacing:.17em; text-transform:uppercase; }
+h3 { margin:0 0 4px; font-family:Georgia,serif; font-size:1.25rem; font-weight:400; }
+p, li { line-height:1.6; }
+.entry { display:flex; justify-content:space-between; gap:30px; }
+.entry p { margin:0; color:var(--muted); }
+.entry time { white-space:nowrap; color:var(--muted); font-size:.85rem; }
+ul { margin:10px 0 0; padding-left:19px; }
+.two-columns { display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+@media(max-width:650px){ .cv-page{padding:40px 28px}.cv-page header,.entry{flex-direction:column;gap:15px}address{text-align:left}.two-columns{grid-template-columns:1fr;gap:25px}h1{font-size:2.7rem} }
+@media print { @page{size:A4;margin:12mm} body{padding:0;background:white}.page-actions{display:none}.cv-page{max-width:none;min-height:auto;padding:0;box-shadow:none}section{padding:16px 0} }
