@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="designerportfolio.css">
     <link rel="stylesheet" href="../CSS/Nav.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-
+    <script src="../theme-toggle.js" defer></script>
 
 </head>
 
 <body>
   <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-top">
-      <a href="Index.html" class="brand" aria-label="SEASONS home">
-        <span class="brand-icon" aria-hidden="true"><img src="images/seasonslogo.png" alt=""></span>
+      <a href="../Index.html" class="brand" aria-label="SEASONS home">
+        <span class="brand-icon" aria-hidden="true"><img src="../images/seasonslogo.png" alt=""></span>
         <span class="brand-name">SEASONS</span>
       </a>
       <div class="nav-actions">
-        <a href="catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
-        <a href="login.html" class="nav-icon" aria-label="Account">♟</a>
+        <a href="../catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
+        <a href="../login.html" class="nav-icon" aria-label="Account">♟</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">☾</span>
+        </button>
       </div>
     </div>
     <ul class="nav-links">
@@ -90,10 +94,6 @@
       <div class="hero-media">
         <div class="portrait-frame">
           <img class="portrait-placeholder" src="Mahrukh.jpg" alt="Mahrukh Bashir">
-            <rect width="360" height="460" fill="#DCD3C1"/>
-            <circle cx="180" cy="175" r="72" fill="#C9A66B"/>
-            <path d="M60 460c0-95 54-150 120-150s120 55 120 150z" fill="#C9A66B"/>
-          </svg>
         </div>
       </div>
 
@@ -136,12 +136,38 @@
           and attention to detail. My background in public speaking, leadership and creative projects has also helped me become a confident communicator and collaborative team member.
         </p>
       </div>
+
+      <a class="btn btn-outline cv-btn" href="Mahrukh_CV.pdf" download>
+        📄 Download My CV <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Technical Skills</h2>
+      <ul class="skill-bars">
+        <li>
+          <div class="skill-label"><span>HTML &amp; CSS</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:90%"></div></div>
+        </li>
+        <li>
+          <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+        </li>
+        <li>
+          <div class="skill-label"><span>Responsive Design</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+        </li>
+        <li>
+          <div class="skill-label"><span>UI / Visual Design</span><span>70%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:70%"></div></div>
+        </li>
+      </ul>
     </section>
 
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand"><h3><img src="../images/seasonslogo.png" alt=""> SEASONS</h3><p>Discover your signature scent.</p></div>
-      <div class="footer-links"><h4>Navigation</h4><a href="Index.html">Home</a><a href="About.html">About Us</a><a href="catalouge.html">Catalogue</a><a href="Reviews.html">Reviews</a><a href="login.html">Login</a></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="../Index.html">Home</a><a href="../About.html">About Us</a><a href="../catalouge.html">Catalogue</a><a href="../Reviews.html">Reviews</a><a href="../login.html">Login</a></div>
       <div class="footer-contact"><h4>Contact</h4><p>Email: fragrance@email.com</p><p>Phone: +60 12-345 6789</p></div>
     </div>
     <div class="footer-bottom"><p>&copy; 2026 SEASONS. All Rights Reserved.</p></div>
@@ -149,6 +175,6 @@
   </div>
 </div>
 
-<script src="designerPortfolio.js"></script>
+<script src="designerportfolio.js"></script>
 </body>
 </html>
