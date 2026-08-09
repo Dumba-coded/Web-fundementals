@@ -394,3 +394,18 @@
         color: #fff !important;
     }
 }
+.skill-bar .fill.python {
+    width: 75%;
+}
+
+.skill-bar .fill.html5 {
+    width: 60%;
+}
+
+.skill-bar .fill.javascript {
+    width: 40%;
+}
+
+.skill-bar .fill.sql {
+    width: 20%;
+}
