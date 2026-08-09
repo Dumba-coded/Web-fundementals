@@ -143,3 +143,66 @@
       .nav-links a { font-size: 14px; }
       .nav-actions { gap: 18px; }
     }
+
+
+/*dark mode and theme toggle*/
+:root {
+  --bg-color: #F8F3D9;
+  --text-color: #111111;
+  --nav-bg: #B9B28A;
+  --border-color: #111111;
+}
+
+body.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #f8f3d9;
+  --nav-bg: #2d2b22;
+  --border-color: #f8f3d9;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  background-color: var(--nav-bg);
+  border-bottom: 2px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-top {
+  border-bottom: 2px solid var(--border-color);
+  transition: border-color 0.3s ease;
+}
+
+.brand, 
+.nav-icon, 
+.nav-links a {
+  color: var(--text-color);
+}
+
+.nav-links li:not(:last-child)::after {
+  background-color: var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.15);
+}
