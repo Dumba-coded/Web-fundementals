@@ -187,3 +187,22 @@
   .values-strip span:nth-child(2) { border-right: 0; }
   .values-strip span:nth-child(-n + 2) { border-bottom: 1px solid var(--cream); }
 }
+.member-action-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: var(--cream);
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.member-action-btn:hover {
+  background: var(--deep-olive);
+  color: var(--cream);
+}
