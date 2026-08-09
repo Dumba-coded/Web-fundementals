@@ -1,273 +1,684 @@
-<!-- Carol's Personal Portfolio (Updated Aesthetic Theme) -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Carol Dandira, Computer Science student and web developer.">
-  <title>Carol Dandira | Personal Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <meta
+    name="description"
+    content="Carol Dandira's Computer Science portfolio, education, technical skills and projects."
+  >
+
+  <title>Carol Dandira | Portfolio</title>
+
+  <!-- portfolio -->
   <link rel="stylesheet" href="styleCarol.css">
+
+  <!-- Print stylesheet required by the assessment rubric -->
+  <link rel="stylesheet" href="print.css" media="print">
 </head>
+
 <body>
+
   <header class="site-header">
-    <a class="brand" href="#home">
-      CD.
-      <img src="cherry.png" alt="" class="pixel-icon pixel-icon-sm">
+
+    <a class="brand" href="../Index.html" aria-label="Return to SEASONS homepage">
+      <span class="brand-mark">S</span>
+      <span>SEASONS</span>
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="site-navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <nav class="site-nav">
-      <a href="About.html">About</a>
+    <nav
+      class="site-nav"
+      id="site-navigation"
+      aria-label="Portfolio navigation"
+    >
+      <a href="../About.html">Team About</a>
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a class="nav-button" href="cv.pdf" download>Download CV</a>
+      <a class="nav-button" href="cv.pdf" download>
+        Download CV
+      </a>
     </nav>
+
   </header>
 
+
   <main>
-    <section class="hero section" id="home">
+
+    <section class="hero section" aria-labelledby="hero-title">
+
       <div class="hero-copy">
-        <p class="eyebrow">
-          <img src="assets/kiwi1.png" alt="" class="pixel-icon pixel-icon-sm">
-          Computer Science Student · Web Developer · Creative Technologist
-        </p>
-        <h1>Hi, I’m <span>Carol Dandira.</span></h1>
+
+        <p class="eyebrow">Computer Science Student</p>
+
+        <h1 id="hero-title">
+          Hi, I'm <span>Carol.</span>
+          <br>
+          I build ideas into interfaces.
+        </h1>
+
         <p class="hero-text">
-          I design and build thoughtful digital experiences that combine clean code,
-          strong visual identity and meaningful user interaction.
+          I am a Computer Science student interested in web development,
+          artificial intelligence and creative digital experiences.
+          I enjoy combining technology with thoughtful visual design.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">View my work</a>
-          <a class="button button-secondary" href="carol-dandira-cv.html" download>Download CV</a>
+
+          <a class="button button-primary" href="#projects">
+            View my work
+          </a>
+
+          <a class="button button-secondary" href="cv.pdf" download>
+            Download CV
+          </a>
+
         </div>
 
         <div class="quick-facts">
-          <div><strong>Based in</strong><span>Malaysia</span></div>
-          <div><strong>Studying</strong><span>BSc Computer Science</span></div>
-          <div><strong>Focus</strong><span>Web &amp; AI</span></div>
+
+          <div>
+            <strong>Based in</strong>
+            <span>Malaysia</span>
+          </div>
+
+          <div>
+            <strong>Studying</strong>
+            <span>BSc Computer Science</span>
+          </div>
+
+          <div>
+            <strong>Focus</strong>
+            <span>Web &amp; AI</span>
+          </div>
+
         </div>
+
       </div>
+
 
       <div class="hero-visual">
+
         <div class="portrait-frame">
-          <!-- Restored your original portrait photo here -->
-          <img src="assets/carol-portrait.jpg" alt="Portrait of Carol Dandira">
+
+          <img
+            src="assets/carol-portrait.jpg"
+            alt="Portrait of Carol Dandira"
+          >
+
         </div>
-        
-        <!-- Small pixel accents floating next to cards -->
+
         <div class="floating-card card-code">
-          <img src="assets/kiwi1.png" alt="" class="pixel-icon">
-          <span>&lt;/&gt;</span>
-          <p>Turning ideas into interfaces</p>
+
+          <span class="pixel-symbol">&lt;/&gt;</span>
+
+          <div>
+            <strong>Creative coding</strong>
+            <p>Turning ideas into interfaces.</p>
+          </div>
+
         </div>
+
+
         <div class="floating-card card-status">
-          <img src="assets/pinkperfumepixel.png" alt="" class="pixel-icon">
-          <span class="status-dot"></span>
-          <p>Open to collaboration</p>
+
+          <span class="status-dot" aria-hidden="true"></span>
+
+          <div>
+            <strong>Open to collaboration</strong>
+            <p>Currently learning &amp; building.</p>
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="about section" id="about">
+    <section class="about section" id="about" aria-labelledby="about-title">
+
       <div class="section-heading">
+
         <p class="section-number">01</p>
+
         <div>
-          <p class="eyebrow">
-            <img src="assets/pinkperfumepixel.png" alt="" class="pixel-icon pixel-icon-sm">
-            Personal bio
-          </p>
-          <h2>Curious by nature, creative by practice.</h2>
+          <p class="eyebrow">Personal bio</p>
+
+          <h2 id="about-title">
+            Curious by nature, creative by practice.
+          </h2>
         </div>
+
       </div>
+
 
       <div class="about-grid">
+
         <article class="about-card">
+
+          <h3>About me</h3>
+
           <p>
-            I am a Computer Science student at Sunway University with a strong interest
-            in web development, artificial intelligence and digital product design.
-            I enjoy transforming ideas into functional, visually engaging websites and applications.
+            I am a Computer Science student at Sunway University with a
+            strong interest in web development, artificial intelligence
+            and digital product design.
           </p>
+
           <p>
-            My background in public speaking, leadership and creative projects has helped
-            me become a confident communicator and collaborative team member. I approach
-            every project with curiosity, attention to detail and a willingness to learn.
+            I enjoy transforming ideas into functional, visually engaging
+            websites and applications. My approach combines technical
+            problem-solving with creativity and attention to detail.
           </p>
+
+          <p>
+            My background in public speaking, leadership and creative
+            projects has also helped me become a confident communicator
+            and collaborative team member.
+          </p>
+
         </article>
+
 
         <aside class="quote-card">
-          <p>“I am not afraid of death. Rather I am afraid of dying unsuccessful.”</p>
-          <span>
-            — Carol Dandira 
-            <img src="assets/kiwi1.png" alt="" class="pixel-icon pixel-icon-sm">
+
+          <span class="quote-mark">“</span>
+
+          <p>
+            I am not afraid of death. Rather I am afraid of dying unsuccessful.
+          </p>
+
+          <span class="quote-author">
+            — Carol Dandira
           </span>
+
         </aside>
+
       </div>
+
     </section>
 
-    <section class="education section" id="education">
+
+    <section
+      class="education section"
+      id="education"
+      aria-labelledby="education-title"
+    >
+
       <div class="section-heading">
+
         <p class="section-number">02</p>
+
         <div>
-          <p class="eyebrow">
-            <img src="assets/kiwi1.png" alt="" class="pixel-icon pixel-icon-sm">
-            Education background
-          </p>
-          <h2>My academic journey.</h2>
+          <p class="eyebrow">Education background</p>
+
+          <h2 id="education-title">
+            My academic journey.
+          </h2>
         </div>
+
       </div>
+
 
       <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="timeline-topline"><h3>Sunway University</h3><span>2026–2029</span></div>
-            <p class="timeline-subtitle">BSc (Hons) Computer Science</p>
-            <p>Developing practical skills in programming, web technologies, computer organisation, mathematics and artificial intelligence.</p>
-          </div>
-        </article>
 
         <article class="timeline-item">
-          <div class="timeline-marker"></div>
+
+          <div class="timeline-marker" aria-hidden="true"></div>
+
           <div class="timeline-card">
-            <div class="timeline-topline"><h3>Goldridge College</h3><span>Secondary Education</span></div>
-            <p class="timeline-subtitle">Cambridge IGCSE and A-Level</p>
-            <p>Studied Mathematics, Computer Science, Physics and Chemistry. Served as Head of Culture and developed leadership and public-speaking skills.</p>
+
+            <div class="timeline-topline">
+
+              <h3>Sunway University</h3>
+
+              <span>2026–2029</span>
+
+            </div>
+
+            <p class="timeline-subtitle">
+              BSc (Hons) Computer Science
+            </p>
+
+            <p>
+              Developing practical knowledge in programming, web
+              technologies, computer organisation, mathematics and
+              artificial intelligence.
+            </p>
+
           </div>
+
         </article>
 
+
         <article class="timeline-item">
-          <div class="timeline-marker"></div>
+
+          <div class="timeline-marker" aria-hidden="true"></div>
+
           <div class="timeline-card">
-            <div class="timeline-topline"><h3>Academic Highlights</h3><span>Selected achievements</span></div>
-            <p>Top in Zimbabwe for O-Level Commerce, three-time inter-house public speaking champion and Allied Arts Solo Poetry Honours recipient.</p>
+
+            <div class="timeline-topline">
+
+              <h3>Goldridge College</h3>
+
+              <span>Secondary Education</span>
+
+            </div>
+
+            <p class="timeline-subtitle">
+              Cambridge IGCSE and A-Level
+            </p>
+
+            <p>
+              Studied Mathematics, Computer Science, Physics and
+              Chemistry. Served as Head of Culture while developing
+              leadership, communication and public-speaking skills.
+            </p>
+
           </div>
+
         </article>
+
+
+        <article class="timeline-item">
+
+          <div class="timeline-marker" aria-hidden="true"></div>
+
+          <div class="timeline-card">
+
+            <div class="timeline-topline">
+
+              <h3>Academic Highlights</h3>
+
+              <span>Selected achievements</span>
+
+            </div>
+
+            <p class="timeline-subtitle">
+              Leadership &amp; creative achievements
+            </p>
+
+            <p>
+              Top in Zimbabwe for O-Level Commerce, three-time
+              inter-house public speaking champion and Allied Arts
+              Solo Poetry Honours recipient.
+            </p>
+
+          </div>
+
+        </article>
+
       </div>
+
     </section>
 
-    <section class="skills section" id="skills">
+    <section
+      class="skills section"
+      id="skills"
+      aria-labelledby="skills-title"
+    >
+
       <div class="section-heading">
+
         <p class="section-number">03</p>
+
         <div>
-          <p class="eyebrow">
-            <img src="assets/pinkperfumepixel.png" alt="" class="pixel-icon pixel-icon-sm">
-            Technical skills
-          </p>
-          <h2>Tools I use to build.</h2>
+
+          <p class="eyebrow">Technical skills</p>
+
+          <h2 id="skills-title">
+            Tools I use to build.
+          </h2>
+
         </div>
+
       </div>
+
 
       <div class="skills-layout">
+
         <div class="skill-bars">
+
           <article class="skill">
-            <div class="skill-label"><span>HTML</span><span>90%</span></div>
-            <div class="progress"><span style="--level:90%"></span></div>
+
+            <div class="skill-label">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="HTML skill level"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="90"
+            >
+              <span class="progress-90"></span>
+            </div>
+
           </article>
+
+
           <article class="skill">
-            <div class="skill-label"><span>CSS</span><span>86%</span></div>
-            <div class="progress"><span style="--level:86%"></span></div>
+
+            <div class="skill-label">
+              <span>CSS</span>
+              <span>86%</span>
+            </div>
+
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="CSS skill level"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="86"
+            >
+              <span class="progress-86"></span>
+            </div>
+
           </article>
+
+
           <article class="skill">
-            <div class="skill-label"><span>JavaScript</span><span>72%</span></div>
-            <div class="progress"><span style="--level:72%"></span></div>
+
+            <div class="skill-label">
+              <span>JavaScript</span>
+              <span>72%</span>
+            </div>
+
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="JavaScript skill level"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="72"
+            >
+              <span class="progress-72"></span>
+            </div>
+
           </article>
-          
-          
+
+
+          <article class="skill">
+
+            <div class="skill-label">
+              <span>Python</span>
+              <span>65%</span>
+            </div>
+
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Python skill level"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="65"
+            >
+              <span class="progress-65"></span>
+            </div>
+
+          </article>
+
         </div>
+
 
         <div class="toolkit">
+
           <h3>Additional toolkit</h3>
+
           <div class="tool-tags">
-            <span>Responsive Design</span><span>CSS Grid</span><span>Flexbox</span>
-            <span>Git &amp; GitHub</span><span>UI Design</span><span>XAMPP</span>
-            
+
+            <span>Responsive Design</span>
+            <span>CSS Grid</span>
+            <span>Flexbox</span>
+            <span>Git &amp; GitHub</span>
+            <span>UI Design</span>
+            <span>XAMPP</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="projects section" id="projects">
+
+    <section
+      class="projects section"
+      id="projects"
+      aria-labelledby="projects-title"
+    >
+
       <div class="section-heading">
+
         <p class="section-number">04</p>
+
         <div>
-          <p class="eyebrow">
-            <img src="assets/kiwi1.png" alt="" class="pixel-icon pixel-icon-sm">
-            Featured projects
-          </p>
-          <h2>Some websites I am working on</h2>
+
+          <p class="eyebrow">Featured projects</p>
+
+          <h2 id="projects-title">
+            Some websites I am working on.
+          </h2>
+
         </div>
+
       </div>
+
 
       <div class="project-grid">
-        <article class="project-card project-featured">
+
+        <article class="project-card">
+
           <div class="project-number">
-            01 
+            01
           </div>
-          <div>
-            <p class="project-type">Social music platform</p>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              Social music platform
+            </p>
+
             <h3>Melopod</h3>
-            <p>A social media concept for musicians to share music, discover artists, collaborate and build creative communities.</p>
-            
+
+            <p>
+              A social media concept for musicians to share music,
+              discover artists, collaborate and build creative
+              communities.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+            </div>
+
           </div>
+
         </article>
 
-        <article class="project-card">
-          <div class="project-number">
-            02 
-          </div>
-          <div>
-            <p class="project-type">E-commerce platform</p>
-            <h3>Seasons</h3>
-            <p>An e-commerce website for a perfume brand, featuring product catalogues, user authentication and a shopping cart system.</p>
-            
-          </div>
-        </article>
 
         <article class="project-card">
+
           <div class="project-number">
-            03 
+            02
           </div>
-          <div>
-            <p class="project-type">Photography platform</p>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              E-commerce platform
+            </p>
+
+            <h3>SEASONS</h3>
+
+            <p>
+              An e-commerce website for a perfume brand featuring
+              product catalogues, user authentication, reviews and
+              shopping functionality.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>UI Design</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-card">
+
+          <div class="project-number">
+            03
+          </div>
+
+          <div class="project-content">
+
+            <p class="project-type">
+              Photography platform
+            </p>
+
             <h3>Majaru Studios</h3>
-            <p>A client-focused photography website featuring authentication, booking, galleries and an administrative dashboard.</p>
-            
+
+            <p>
+              A client-focused photography website featuring
+              authentication, booking, galleries and an administrative
+              dashboard.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+
           </div>
+
         </article>
+
       </div>
+
     </section>
 
-    <section class="contact section">
+    <section
+      class="contact section"
+      aria-labelledby="contact-title"
+    >
+
       <div class="contact-card">
+
         <p class="eyebrow">
-          <img src="assets/pinkperfumepixel.png" alt="" class="pixel-icon pixel-icon-sm">
-          Let’s connect
+          Let's connect
         </p>
-        <h2>Have a project or creative idea?</h2>
-        <p>I am always interested in learning, collaborating and building something meaningful.</p>
-        <a class="button button-light" href="mailto:carol@example.com">Send an email</a>
+
+        <h2 id="contact-title">
+          Have a project or creative idea?
+        </h2>
+
+        <p>
+          I am always interested in learning, collaborating and
+          building something meaningful.
+        </p>
+
+        <a
+          class="button button-light"
+          href="mailto:carol@me.com"
+        >
+          Send an email
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
   <footer>
+
     <p>
-      Designed and developed by Carol Dandira 
-      <img src="assets/pinkperfumepixel.png" alt="" class="pixel-icon pixel-icon-sm">
+      &copy; 2026 Carol Dandira. All rights reserved.
     </p>
-    <a href="#home">Back to top ↑</a>
+
+    <p>
+      <a href="../Index.html">
+        Back to SEASONS
+      </a>
+    </p>
+
   </footer>
 
-  <script src="scriptCarol.js"></script>
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const siteNav = document.querySelector(".site-nav");
+
+    menuToggle.addEventListener("click", () => {
+
+      const isOpen = siteNav.classList.toggle("is-open");
+
+      menuToggle.classList.toggle("is-active", isOpen);
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+      );
+
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Close navigation menu"
+          : "Open navigation menu"
+      );
+
+    });
+
+
+    document.querySelectorAll(".site-nav a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        siteNav.classList.remove("is-open");
+        menuToggle.classList.remove("is-active");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Open navigation menu"
+        );
+
+      });
+
+    });
+  </script>
+
 </body>
 </html>
