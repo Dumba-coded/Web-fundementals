@@ -5,36 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal portfolio of Fatima, a student and aspiring web designer.">
   <title>Fatima | Personal Portfolio</title>
-  <link rel="stylesheet" href="../CSS/Nav.css">
   <link rel="stylesheet" href="Fatima.css">
   <link rel="stylesheet" href="Fatima-print.css" media="print">
   <link rel="stylesheet" href="../CSS/footer.css">
   <script src="../theme-toggle.js" defer></script>
 </head>
 <body>
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="navbar-top">
-      <a href="../Index.html" class="brand" aria-label="SEASONS home">
-        <span class="brand-icon" aria-hidden="true"><img src="../images/seasonslogo.png" alt=""></span>
-        <span class="brand-name">SEASONS</span>
-      </a>
-      <div class="nav-actions">
-        <a href="../catalouge.html" class="nav-icon search-icon" aria-label="Search catalogue">⌕</a>
-        <a href="../login.html" class="nav-icon" aria-label="Account">♟</a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
-          <span class="theme-icon sun-icon" aria-hidden="true">☀</span>
-          <span class="theme-icon moon-icon" aria-hidden="true">☾</span>
-        </button>
-      </div>
-    </div>
-    <ul class="nav-links">
-      <li><a href="../Index.html">Home</a></li>
-      <li><a class="active" href="../About.html" aria-current="page">About Us</a></li>
-      <li><a href="../catalouge.html">Catalogue</a></li>
-      <li><a href="../login.html">Login</a></li>
-      <li><a href="../Reviews.html">Reviews</a></li>
-    </ul>
-  </nav>
+  <header class="portfolio-header">
+    <a href="../Index.html" class="portfolio-brand" aria-label="SEASONS home">
+      <img src="../images/seasonslogo.png" alt="">
+      <span>SEASONS</span>
+    </a>
+    <nav class="portfolio-nav" aria-label="Fatima portfolio navigation">
+      <a class="return-link" href="../About.html">← Return to About Us</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contributions">Contributions</a>
+      <a class="cv-nav-button" href="FatimaCV.html">CV</a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <span class="theme-icon sun-icon" aria-hidden="true">☀</span>
+        <span class="theme-icon moon-icon" aria-hidden="true">☾</span>
+      </button>
+    </nav>
+  </header>
 
   <main>
     <section class="portfolio-hero" aria-labelledby="portfolio-title">
@@ -91,7 +86,7 @@
       </div>
     </section>
 
-    <section class="skills-section" aria-labelledby="skills-title">
+    <section class="skills-section" id="skills" aria-labelledby="skills-title">
       <div class="section-heading">
         <p class="eyebrow">What I bring</p>
         <h2 id="skills-title">Skills</h2>

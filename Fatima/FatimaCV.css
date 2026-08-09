@@ -1,6 +1,6 @@
-:root { --paper:#fffdfb; --pink:#f6dbe2; --rose:#a95870; --ink:#4b3540; --muted:#755d68; }
+:root { --paper:#fffaf0; --pink:#f3d8df; --rose:#a75f74; --ink:#504b38; --muted:#766f55; --olive:#b9b28a; }
 * { box-sizing:border-box; }
-body { margin:0; padding:40px 20px; background:#f4e8eb; color:var(--ink); font-family:Arial, Helvetica, sans-serif; }
+body { margin:0; padding:40px 20px; background:#d8d2ad; color:var(--ink); font-family:Arial, Helvetica, sans-serif; }
 .page-actions { max-width:900px; display:flex; justify-content:space-between; margin:0 auto 16px; }
 .page-actions a, .page-actions button { border:1px solid var(--rose); background:var(--paper); color:var(--ink); padding:11px 16px; text-decoration:none; font:inherit; cursor:pointer; }
 .cv-page { max-width:900px; min-height:1100px; margin:auto; padding:65px 72px; background:var(--paper); box-shadow:0 12px 40px rgba(75,53,64,.14); }
